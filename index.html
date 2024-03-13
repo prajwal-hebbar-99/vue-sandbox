@@ -17,10 +17,10 @@
       <h1>Vue Course Goals</h1>
     </header>
     <section id="user-goal">
-      <h2>My Course Goal</h2>
-      <p>{{ randomGoal() }}</p>
-      <p v-html="htmlContent"></p>
-      <p>Learn More about <a v-bind:href="vueLink">Vue</a></p>
+      <h2>Counter Project</h2>
+      <button v-on:click="count++">Add</button>
+      <button v-on:click="count--">Subtract</button>
+      <p>Result: {{ count }}</p>
     </section>
   </body>
 </html>
