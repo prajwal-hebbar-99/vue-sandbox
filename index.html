@@ -18,8 +18,8 @@
     </header>
     <section id="user-goal">
       <h2>Counter Project</h2>
-      <button v-on:click="add">Add</button>
-      <button v-on:click="subtract">Subtract</button>
+      <button v-on:click="add(20)">Add 20</button>
+      <button v-on:click="subtract(5)">Subtract 5</button>
       <p>Result: {{ count }}</p>
     </section>
   </body>
