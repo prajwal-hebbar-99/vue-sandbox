@@ -4,6 +4,14 @@ const vue = Vue.createApp({
       count: 0,
     };
   },
+  methods: {
+    add: function () {
+      this.count++;
+    },
+    subtract: function () {
+      this.count--;
+    },
+  },
 });
 
 vue.mount("#user-goal");
