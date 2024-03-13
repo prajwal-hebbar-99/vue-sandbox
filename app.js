@@ -3,6 +3,7 @@ const vue = Vue.createApp({
     return {
       goalA: "Learn Vue!",
       goalB: "Learn React!",
+      htmlContent: "<h2 style='color: white'>Test Header</h2>",
       vueLink: "https://vuejs.org/",
     };
   },
