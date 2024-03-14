@@ -25,6 +25,10 @@
       <p>Your Name : {{ name }}</p>
       <input type="text" v-on:input="displayFullName($event, 'Hebbar')" />
       <p>Your Full Name: {{ fullName }}</p>
+      <form v-on:submit="submitForm">
+        <input type="text" />
+        <button>Submit</button>
+      </form>
     </section>
   </body>
 </html>

@@ -19,6 +19,10 @@ const vue = Vue.createApp({
     displayFullName: function (event, lastName) {
       this.fullName = event.target.value + " " + lastName;
     },
+    submitForm: function (event) {
+      event.preventDefault();
+      alert("Form Submitted");
+    },
   },
 });
 
