@@ -2,6 +2,8 @@ const vue = Vue.createApp({
   data: function () {
     return {
       count: 0,
+      name: "",
+      fullName: "",
     };
   },
   methods: {
@@ -10,6 +12,12 @@ const vue = Vue.createApp({
     },
     subtract: function (num) {
       this.count -= num;
+    },
+    displayName: function (event) {
+      this.name = event.target.value;
+    },
+    displayFullName: function (event, lastName) {
+      this.fullName = event.target.value + " " + lastName;
     },
   },
 });
