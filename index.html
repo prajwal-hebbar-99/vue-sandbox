@@ -20,6 +20,7 @@
       <h2>Counter Project</h2>
       <button v-on:click="add(20)">Add 20</button>
       <button v-on:click.middle="subtract(5)">Subtract 5</button>
+      <p v-once>Starting Counter : {{ count }}</p>
       <p>Result: {{ count }}</p>
       <input type="text" v-on:input="displayName" />
       <p>Your Name : {{ name }}</p>
